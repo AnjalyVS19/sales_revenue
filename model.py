@@ -12,7 +12,8 @@ import pandas as pd
 
 # Use the correct relative or absolute path to your CSV file
 # df = pd.read_csv(r"C:\Users\archa\OneDrive\Desktop\internship\Task1\my_flask_project\Online Sales Data.csv", encoding='latin1')
-df = pd.read_csv(r"C:\Users\archa\OneDrive\Desktop\internship\Task1\my_flask_project\Online Sales Data.csv", encoding='latin1')
+# df = pd.read_csv(r"C:\Users\archa\OneDrive\Desktop\internship\Task1\my_flask_project\Online Sales Data.csv", encoding='latin1')
+df = pd.read_csv(r"/home/ubuntu/Sales-Revenue-Prediction-Model/Online Sales Data.csv", encoding='latin1')
 df.drop(['Transaction ID', 'Date', 'Product Name'], axis=1, inplace=True)
 x = df.drop('Total Revenue', axis=1)
 y = df['Total Revenue']
